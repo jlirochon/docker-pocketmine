@@ -14,7 +14,7 @@ RUN apt-get -yqq update && \
 
     # install php
     cd /pocketmine/PocketMine-MP && \
-    wget -q https://github.com/jlirochon/php-build-scripts/releases/download/untagged-7d332c6f3bdcb1ba0ea8/php-5.6.10-scaleway-c1.tar.gz && \
+    wget -q https://github.com/jlirochon/php-build-scripts/releases/download/0.0.1/php-5.6.10-scaleway-c1.tar.gz && \
     tar xvzf php-5.6.10-scaleway-c1.tar.gz && \
     rm -f php-5.6.10-scaleway-c1.tar.gz && \
 
