@@ -8,15 +8,15 @@ RUN apt-get -yqq update && \
     # install PocketMine-MP
     cd /pocketmine && \
     git clone https://github.com/PocketMine/PocketMine-MP.git && \
-    cd PocketMine-MP && git checkout -t origin/mcpe-0.13 && \
+    cd PocketMine-MP && \
     git submodule update --init --recursive && \
     find . -name ".git" | xargs rm -rf && \
 
     # install php
     cd /pocketmine/PocketMine-MP && \
-    wget -q https://bintray.com/artifact/download/pocketmine/PocketMine/PHP_5.6.10_x86-64_Linux.tar.gz && \
-    tar xvzf PHP_5.6.10_x86-64_Linux.tar.gz && \
-    rm -f PHP_5.6.10_x86-64_Linux.tar.gz && \
+    wget -q https://bintray.com/artifact/download/pocketmine/PocketMine/PHP_7.0.3_x86-64_Linux.tar.gz && \
+    tar xvzf PHP_7.0.3_x86-64_Linux.tar.gz && \
+    rm -f PHP_7.0.3_x86-64_Linux.tar.gz && \
 
     # change owner
     chown -R pocketmine:pocketmine /pocketmine && \
